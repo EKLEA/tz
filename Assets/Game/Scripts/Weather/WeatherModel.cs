@@ -67,7 +67,6 @@ public class WeatherModel
                     
                     Period currentPeriod = new Period
                     {
-                        name = periodData["name"],
                         temperature = periodData["temperature"].AsInt,
                         temperatureUnit = periodData["temperatureUnit"],
                         icon = sprite
@@ -123,7 +122,6 @@ public class Properties
 }
 public class Period
 {
-    public string name;
     public int temperature;
     public string temperatureUnit;
     public Sprite icon;

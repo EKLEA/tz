@@ -14,7 +14,7 @@ public class WeatherView: MonoBehaviour
     
     public void Refresh(WeatherArgs t)
     {
-        weatherText.text=string.Format("{0} - {1}{2}",t.period.name,t.period.temperature,t.period.temperatureUnit);
+        weatherText.text=string.Format("Сегодня - {0}{1}",t.period.temperature,t.period.temperatureUnit);
         weatherIcon.sprite=t.period.icon;
     }
 
